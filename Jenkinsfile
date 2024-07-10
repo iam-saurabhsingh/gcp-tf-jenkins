@@ -1,7 +1,7 @@
 pipeline {
     agent any
 	tools {
-		terraform
+		terraform 'Terraform v1.9.2'
     }
 	
     environment {
