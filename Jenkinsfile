@@ -1,8 +1,5 @@
 pipeline {
     agent any
-//	  tools {
-//        terraform 'terraform'
-//    }
     environment {
         GOOGLE_APPLICATION_CREDENTIALS = credentials('gcp-key')
 	GIT_TOKEN = credentials('git-token')
