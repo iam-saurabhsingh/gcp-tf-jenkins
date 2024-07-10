@@ -1,5 +1,8 @@
 pipeline {
     agent any
+	tools {
+		terraform
+    }
 	
     environment {
         GOOGLE_APPLICATION_CREDENTIALS = credentials('gcp-key')
