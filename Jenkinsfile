@@ -11,20 +11,11 @@ pipeline {
                git "https://${GIT_TOKEN}@github.com/iam-saurabhsingh/gcp-tf-jenkins.git"
             }
         }
-	    
-        stage('Terraform version') {
-            steps {
-                script {
-                    sh 'terraform --version'
-                }
-            }
-        }
-
-	    
+   
         stage('Terraform Init') {
             steps {
                 script {
-                    sh 'terraform init'
+                    sh 'terraform init -reconfigure'
                 }
             }
         }
