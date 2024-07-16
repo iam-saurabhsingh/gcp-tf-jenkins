@@ -1,6 +1,6 @@
 #resource to create a gcp bucket
 resource "google_storage_bucket" "my-bucket1" {
-  name                     = "tt-githubdemo-bucket-001"
+  name                     = "tt-githubdemo-bucket002"
   project                  = "tt-dev-001"
   location                 = "US"
   force_destroy            = true
@@ -8,7 +8,7 @@ resource "google_storage_bucket" "my-bucket1" {
 }
 #
 resource "google_storage_bucket" "my-bucket2" {
-  name                     = "tt-githubdemo-bucket-002"
+  name                     = "tt-githubdemo-bucket003"
   project                  = "tt-dev-001"
   location                 = "US"
   force_destroy            = true
